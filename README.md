@@ -36,11 +36,19 @@ exec "$modules"/barrt/runner.sh
 
 The following are provided as bash functions:
 
-### Choosing an nginx scenario
+### Setting up an nginx scenario
 
 `set_nginx_conf $full_path_to_nginx_conf`
 
 `get_nginx_conf`
+
+`set_nginx_access_log $full_path_to_nginx_access_log`
+
+`get_nginx_access_log`
+
+`set_nginx_error_log $full_path_to_nginx_error_log`
+
+`get_nginx_error_log`
 
 ### Managing nginx
 
@@ -52,7 +60,17 @@ The following are provided as bash functions:
 
 `reopen_nginx_logs`
 
+`truncate_nginx_logs`
+
 `run_nginx $args_for_nginx...`
+
+### Expectations
+
+`expect_nginx_access_log`
+
+`expect_nginx_error_log`
+
+`expect_nginx_exit_code`
 
 ## License
 
