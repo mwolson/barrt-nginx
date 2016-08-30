@@ -1,6 +1,6 @@
 {
   "name": "barrt-nginx",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "nginx support for BARRT (A Bash Rspec-like Regression Test Framework)",
   "main": "setup.sh",
   "scripts": {},
